@@ -33,9 +33,7 @@ def response_gpt4o_with_images(model, client, systyem_promnpt, json_list):
         model=model,
         messages=[
             {"role": "system", "content": systyem_promnpt},
-            {"role": "user", "content": json_list
-                # {"type": "text", "text": "extract emotions in Japanese"},
-            }
+            {"role": "user", "content": json_list}
         ],
         temperature=1.0,
     )
@@ -118,7 +116,7 @@ if 'get_prompt_for_Dalle' not in st.session_state:
 if 'generate_image' not in st.session_state:
     st.session_state['generate_image'] = None
 
-# st.write("好きな画像をアップロードしてね")
+
 st.subheader('好きな画像をアップロードしてね(最大20枚まで)', divider='grey')
 
 if st.session_state['step'] >= 0:
