@@ -2,7 +2,6 @@
 
 このアプリは、ユーザーがアップロードした画像から感情を分析し、その感情を表現した新しい画像を生成するStreamlitウェブアプリケーションです。Azure OpenAIのGPT-4oとDALL-E 3を活用しています。
 
-![Demo](static/background_forAzureAIDemo.png)
 
 ## 🌟 機能概要
 
